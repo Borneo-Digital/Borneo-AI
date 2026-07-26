@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://borneoai.org/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://borneoai.org/images/home-workshop.jpg</image:loc>
+      <image:caption>BorneoAI practitioners mapping a practical workflow together in Borneo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://borneoai.org/learn</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://borneoai.org/images/upskilling-workshop.jpg</image:loc>
+      <image:caption>Adult learners developing practical AI skills in a BorneoAI session</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://borneoai.org/business</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://borneoai.org/images/business-clinic.jpg</image:loc>
+      <image:caption>Business leaders exploring responsible AI adoption with BorneoAI</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://borneoai.org/community</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://borneoai.org/images/community-gathering.jpg</image:loc>
+      <image:caption>BorneoAI community members sharing practical AI knowledge together</image:caption>
+    </image:image>
+  </url>
+</urlset>
