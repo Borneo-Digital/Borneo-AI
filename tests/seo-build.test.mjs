@@ -4,6 +4,7 @@ import test from "node:test";
 import { routeMetadata } from "../src/seo.js";
 
 const clientUrl = new URL("../dist/client/", import.meta.url);
+const vercelConfigUrl = new URL("../vercel.json", import.meta.url);
 
 function countMatches(value, expression) {
   return value.match(expression)?.length || 0;
@@ -65,4 +66,13 @@ test("publishes only canonical public routes in the sitemap", async () => {
 
   assert.deepEqual(sitemapUrls, canonicalUrls);
   assert.ok(sitemap.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"'));
+});
+
+test("publishes the generated client directory to Vercel", async () => {
+  const config = JSON.parse(await readFile(vercelConfigUrl, "utf8"));
+
+  assert.equal(config.framework, "vite");
+  assert.equal(config.buildCommand, "npm run build");
+  assert.equal(config.outputDirectory, "dist/client");
+  assert.equal(config.cleanUrls, true);
 });
